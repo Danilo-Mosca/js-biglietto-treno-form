@@ -17,18 +17,23 @@
 <body>
     <main>
         <section id="input-section">
+            <div class="image-container">
+                <img src="img/Trenitalia.jpg" alt="Trenitalia" class="pb-4">
+            </div>
+
             <h2>Acquista il tuo biglietto</h2>
             <form id="login">
                 <div class="container">
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label for="firstName">Inserisci i tuo nome:</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Inserisci il tuo nome" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="Inserisci il tuo nome"
+                                required>
                         </div>
                         <div class="col-6 mb-3">
                             <label for="lastName">Inserisci i tuo cognome:</label>
-                            <input type="text" class="form-control" id="lastName"
-                                placeholder="Inserisci il tuo cognome" required>
+                            <input type="text" class="form-control" id="lastName" placeholder="Inserisci il tuo cognome"
+                                required>
                         </div>
                         <div class="col-6 mb-3">
                             <label for="age">Inserisci la tua età:</label>
@@ -50,12 +55,28 @@
         </section>
 
         <section id="ticket-print" class="my-5 d-none">
+            <div class="image-container">
+                <img src="img/Trenitalia.jpg" alt="Trenitalia" class="pb-4">
+            </div>
             <h2>Costo del biglietto</h2>
             <div class="container">
                 <div class="row">
-                    <p class="f-name col-6 mb-3">a</p>
-                    <p class="l-name col-6 mb-3">a</p>
-                    <p class="price col-12 mb-3">a</p>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="f-name"">Nome:</label>
+                        <p class="f-name"></p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="l-name">Cognome:</label>
+                        <p class="l-name"></p>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="price">Il prezzo del tuo biglietto è:</label>
+                        <p class="price"></p>
+                    </div>
+                    <div class="qr-code d-flex flex-column align-items-center">
+                        <p>Questo è il qr code del tuo biglietto:</p>
+                        <img src="img/QR-ticket.jpg" alt="Qr Code" class="col-12 col-md-6">
+                    </div>
                 </div>
             </div>
         </section>

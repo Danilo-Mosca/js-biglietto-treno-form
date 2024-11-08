@@ -52,7 +52,7 @@ elementForm.addEventListener("submit", function (event) {
             finalPrice = finalPrice.toFixed(2);
         }
     }
-    elementOutputPrice.innerHTML = finalPrice;
+    elementOutputPrice.innerHTML = finalPrice + "€";
 });
 
 // Ascoltatore di eventi per il pulsante cancella dati
