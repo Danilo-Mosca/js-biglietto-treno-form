@@ -9,34 +9,45 @@
 .debug {
     border: 1px solid red;
 }
+
 body {
+
+    background-image: linear-gradient(to right top, #036b69, #00847c, #009e8d, #00b99c, #24d4a8);
+    /* OLD CODE:
     background-image: url("../img/Stazione-treni.webp");
+    background-repeat: no-repeat;
+    background-position: top center; */
 }
 
 h2 {
     padding: 10px auto;
     text-align: center;
 }
-.btnsubmit, .btnreset {
+
+.btnsubmit,
+.btnreset {
     text-transform: uppercase;
     font-weight: 500;
 }
+
 .container {
     color: white;
     padding: 20px;
 }
 
-#input-section h2, #ticket-print h2, #ticket-print p {
+#input-section h2,
+#ticket-print h2,
+#ticket-print p {
     color: white;
 }
+
 img {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
 }
+
 .image-container img {
     height: 250px;
-    overflow: hidden;
     /* object-fit: cover; */
 }
 
@@ -46,6 +57,9 @@ img {
     border-radius: 20px;
     background-color: #036B69;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* Nascondo tutto ciò che va oltre il contenitore #input-section, 
+    in questo caso solo l'immagine non la faccio sbordare */
+    overflow: hidden;
 }
 
 #ticket-print {
@@ -54,6 +68,9 @@ img {
     border-radius: 20px;
     background-color: #E13032;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* Nascondo tutto ciò che va oltre il contenitore #ticket-print, 
+    in questo caso solo l'immagine non la faccio sbordare */
+    overflow: hidden;
 }
 
 #ticket-print p {
