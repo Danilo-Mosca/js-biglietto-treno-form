@@ -32,21 +32,17 @@
                         </div>
                         <div class="col-6 mb-3">
                             <label for="age">Inserisci la tua età:</label>
-                            <input type="number" name="age" id="age" class="form-control" placeholder="Inserisci la tua età">
-                            <!-- <select name="age" id="age" class="form-select">
-                                <option value="">Adulto</option>
-                                <option value="18">Junior</option>
-                                <option value="65">Senior</option>
-                            </select> -->
+                            <input type="number" name="age" id="age" class="form-control" min="1" max="100"
+                                placeholder="Inserisci la tua età">
                         </div>
                         <div class="col-6 mb-3">
                             <label for="km">Inserisci i km da percorrere:</label>
-                            <input type="number" class="form-control" id="km"
+                            <input type="text" class="form-control" id="km" min="1"
                                 placeholder="Inserisci i km da percorrere">
                         </div>
                         <div class="mb-3 gap-3 d-flex justify-content-center">
-                            <input type="submit" value="Invia" class="btn btn-success">
-                            <input type="reset" value="Cancella dati" class="btn btn-danger">
+                            <input type="submit" value="Invia" class="btnsubmit btn btn-success">
+                            <input type="reset" value="Cancella dati" class="btnreset btn btn-danger">
                         </div>
                     </div>
                 </div>
@@ -55,11 +51,11 @@
 
         <section id="ticket-print" class="my-5 d-none">
             <h2>Costo del biglietto</h2>
-            <div class="result">
-                <div class="container">
-                    <div class="row">
-
-                    </div>
+            <div class="container">
+                <div class="row">
+                    <p class="f-name col-6 mb-3">a</p>
+                    <p class="l-name col-6 mb-3">a</p>
+                    <p class="price col-12 mb-3">a</p>
                 </div>
             </div>
         </section>
