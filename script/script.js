@@ -13,7 +13,7 @@ const elementOutputName = document.querySelector(".f-name");
 const elementOutputSurname = document.querySelector(".l-name");
 const elementOutputPrice = document.querySelector(".price");
 
-// Aggiungo l'ascoltatore di eventi
+// Aggiungo l'ascoltatore di eventi per il click sul pulsante del form
 elementForm.addEventListener("submit", function (event) {
     // Prevengo il caricamento della pagina
     event.preventDefault();
@@ -37,7 +37,7 @@ elementForm.addEventListener("submit", function (event) {
         const discountUnder = 20;
         const discountOver = 40;
         const km = parseFloat(elementKm.value);
-        
+
         if (age < 18) {
             finalPrice = km * priceKm;
             finalPrice -= (finalPrice / 100) * discountUnder;
@@ -53,6 +53,18 @@ elementForm.addEventListener("submit", function (event) {
         }
     }
     elementOutputPrice.innerHTML = finalPrice;
-    
+});
+
+// Ascoltatore di eventi per il pulsante cancella dati
+elementBtnReset.addEventListener("click", function (event) {
+    // Prevengo il caricamento della pagina
+    event.preventDefault();
+    // Aggiungo la classe "d-none" così da nascondere la section contenente il costo del biglietto
+    elementTicketPrint.classList.add("d-none");
+    // Azzero le input di acquista il biglietto
+    elementFirstName.value ="";
+    elementLastName.value ="";
+    elementAge.value ="";
+    elementKm.value ="";
 });
 
